@@ -1,15 +1,14 @@
-// Tugas 1 prompt untuk mengetahui saldo akhir dari inputan
-// let saldoAwal = 100000
-// alert(`Saldo awal anda adalah Rp.${saldoAwal}`)
+const body = document.body
 
-// let saldoTambah = prompt('Berapa saldo yang akan anda tambahkan?')
-// saldoTambah = parseInt(saldoTambah) //merubah tipe data dari prompt ke int
+const h1 = document.createElement('h1') //membuat element h1
+h1.textContent = "ini h1" //isi element h1
 
-// const saldoTotal = saldoAwal + saldoTambah
-// alert(`Saldo tambahan anda sebanyak Rp.${saldoTambah} dan total saldo anda sebanyak Rp.${saldoTotal}`)
+const namaSaya = document.createElement('p')
+namaSaya.innerHTML = "<marquee>Ekadian Haris</marquee>"
 
+const namaKamu = document.createElement('b')
+namaKamu.innerText = "<marquee>Vika Febrisella</marquee>"
 
-// Tugas 2 menentukan hari dari tanggal yang ada saat ini
-// let hari = [null, 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']
-// const x = new Date().getDay()
-// console.log(`Hari ini adalah hari: ${hari[x]}`)
+body.append(h1) //menampilkan element h1 ke body
+body.append(namaSaya)
+body.append(namaKamu)
