@@ -1,16 +1,15 @@
-// Looping
+// Tugas 1 prompt untuk mengetahui saldo akhir dari inputan
+// let saldoAwal = 100000
+// alert(`Saldo awal anda adalah Rp.${saldoAwal}`)
 
-// 1. for loop
-const namaPegawai = ['atenk', 'fajar', 'haris', 'arip']
-console.log(namaPegawai)
+// let saldoTambah = prompt('Berapa saldo yang akan anda tambahkan?')
+// saldoTambah = parseInt(saldoTambah) //merubah tipe data dari prompt ke int
 
-for(let i = 0; i < namaPegawai.length; i++) {
-    console.log(namaPegawai[i]);
-}
+// const saldoTotal = saldoAwal + saldoTambah
+// alert(`Saldo tambahan anda sebanyak Rp.${saldoTambah} dan total saldo anda sebanyak Rp.${saldoTotal}`)
 
-// 2. Do While
-let i = 0
-do {
-    i++
-    console.log('Haris')
-} while(i < 5)
+
+// Tugas 2 menentukan hari dari tanggal yang ada saat ini
+// let hari = [null, 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu', 'Minggu']
+// const x = new Date().getDay()
+// console.log(`Hari ini adalah hari: ${hari[x]}`)
