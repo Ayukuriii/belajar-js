@@ -1,14 +1,27 @@
 const body = document.body
+const btn1 = document.getElementById('btn1') //select data by Id
+const btn = document.querySelector('button') //select any data 
 
-const h1 = document.createElement('h1') //membuat element h1
-h1.textContent = "ini h1" //isi element h1
+const defaultText = 'Click Me 1' 
+btn1.textContent = defaultText
 
-const namaSaya = document.createElement('p')
-namaSaya.innerHTML = "<marquee>Ekadian Haris</marquee>"
+btn1.style.border = 'none'
+btn1.style.padding = '8px'
+btn1.style.fontSize = '24px'
+btn1.style.color = 'white'
+btn1.style.backgroundColor = 'tomato'
 
-const namaKamu = document.createElement('b')
-namaKamu.innerText = "<marquee>Vika Febrisella</marquee>"
+function clickButton() {
+    btn1.style.backgroundColor = 'cyan'
+    const newText = document.createElement('p')
+    newText.textContent = 'halo haris'
+    body.append(newText)
+}
 
-body.append(h1) //menampilkan element h1 ke body
-body.append(namaSaya)
-body.append(namaKamu)
+function ubahText() {
+    btn1.textContent = 'hihihi'
+}
+
+function oriText() {
+    btn1.textContent = defaultText
+}
